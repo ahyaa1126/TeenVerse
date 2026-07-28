@@ -1,2 +1,9 @@
+<<<<<<< HEAD
 node_modules
 .env
+=======
+node_modules/
+.env
+*.log
+.DS_Store
+>>>>>>> f8811919ee99d76bba9be9cf1daab3e376693680
