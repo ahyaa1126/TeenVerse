@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TeenVerse Chat</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="chat-page">
+
+<div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+<!-- =========================
+SIDEBAR
+========================= -->
+
+<aside id="sidebar" class="sidebar">
+
+    <div class="sidebar-brand">
+
+        <div>
+            <span class="brand-icon">🌊</span>
+            <strong>TeenVerse</strong>
+        </div>
+
+        <button id="closeSidebar"
+                class="icon-button mobile-only">
+            ✕
+        </button>
+
+    </div>
+
+    <p class="sidebar-label">
+        CHAT ROOMS
+    </p>
+
+    <nav class="room-list">
+
+        <button class="room-button active"
+                data-room="General">
+            # General
+        </button>
+
+        <button class="room-button"
+                data-room="Gaming">
+            🎮 Gaming
+        </button>
+
+        <button class="room-button"
+                data-room="Music">
+            🎵 Music
+        </button>
+
+        <button class="room-button"
+                data-room="Study">
+            📚 Study
+        </button>
+
+        <button class="room-button"
+                data-room="Memes">
+            😂 Memes
+        </button>
+
+    </nav>
+
+    <div class="online-heading">
+
+        <p class="sidebar-label">
+            ONLINE USERS
+        </p>
+
+        <span id="onlineCount"
+              class="online-count">
+            0
+        </span>
+
+    </div>
+
+    <div id="onlineUsers"
+         class="online-users"></div>
+
+    <div class="sidebar-footer">
+
+        <div id="myProfile"
+             class="mini-profile"></div>
+
+        <button id="logoutButton"
+                class="logout-button">
+            Logout
+        </button>
+
+    </div>
+
+</aside>
+
+<!-- =========================
+MAIN
+========================= -->
+
+<main class="chat-main">
+
+<header class="chat-header">
+
+    <button id="menuButton"
+            class="icon-button mobile-only">
+        ☰
+    </button>
+
+    <div class="room-heading">
+
+        <h1 id="roomTitle">
+            # General
+        </h1>
+
+        <p>
+            Be kind and keep the conversation friendly.
+        </p>
+
+    </div>
+
+    <div class="header-actions">
+
+        <input
+            id="userSearch"
+            class="search-box"
+            type="text"
+            placeholder="🔍 Search users">
+
+        <button
+            id="settingsBtn"
+            class="settings-btn">
+
+            ⚙️ Settings
+
+        </button>
+
+        <div id="desktopUser"
+             class="desktop-user"></div>
+
+    </div>
+
+</header>
+
+<div class="chat-content">
+
+<section id="messages"
+         class="messages">
+</section>
+
+<aside id="ownerPanel"
+       class="owner-panel hidden">
+
+    <h2>
+        👑 Owner Dashboard
+    </h2>
+
+    <div class="owner-card">
+
+        <h3>Server Info</h3>
+
+        <p>
+            <strong>Rooms:</strong> 5
+        </p>
+
+        <p>
+            <strong>Online:</strong>
+            <span id="ownerOnlineCount">0</span>
+        </p>
+
+    </div>
+
+    <div class="owner-card">
+
+        <h3>Quick Actions</h3>
+
+        <button id="announceBtn">
+            📢 Announcement
+        </button>
+
+        <button id="clearChatBtn">
+            🧹 Clear Room
+        </button>
+
+    </div>
+
+    <div class="owner-card">
+
+        <h3>
+            Registered Users
+        </h3>
+
+        <div id="registeredUsers">
+            Loading...
+        </div>
+
+    </div>
+
+</aside>
+
+</div>
+<div id="typingIndicator" class="typing-indicator"></div>
+
+<form id="messageForm" class="message-composer">
+
+    <button
+        id="emojiButton"
+        class="emoji-button"
+        type="button">
+        😊
+    </button>
+
+    <input
+        id="messageInput"
+        maxlength="500"
+        autocomplete="off"
+        placeholder="Message #General">
+
+    <button
+        class="send-button"
+        type="submit">
+        Send
+    </button>
+
+</form>
+
+<div id="emojiPanel" class="emoji-panel hidden">
+
+    <button type="button">😀</button>
+    <button type="button">😂</button>
+    <button type="button">😍</button>
+    <button type="button">🥳</button>
+    <button type="button">😎</button>
+    <button type="button">😭</button>
+    <button type="button">🔥</button>
+    <button type="button">💙</button>
+    <button type="button">✨</button>
+    <button type="button">👍</button>
+    <button type="button">🎮</button>
+    <button type="button">🎵</button>
+
+</div>
+
+</main>
+
+<!-- =========================
+SETTINGS
+========================= -->
+
+<div id="settingsModal" class="settings-modal hidden">
+
+    <div class="settings-box">
+
+        <button
+            id="closeSettings"
+            class="close-settings">
+            ✖
+        </button>
+
+        <h2>⚙️ Settings</h2>
+
+        <div class="profile-section">
+
+            <div class="profile-avatar">
+
+                <img
+                    id="profilePreview"
+                    src=""
+                    alt="Profile">
+
+            </div>
+
+            <input
+                type="file"
+                id="profileUpload"
+                accept="image/*">
+
+            <label>👤 Username</label>
+
+            <input
+                type="text"
+                id="profileUsername"
+                placeholder="Username">
+
+            <label>🌍 Country</label>
+
+            <input
+                type="text"
+                id="profileCountryInput"
+                placeholder="Country">
+
+            <label>🎂 Age</label>
+
+            <input
+                type="number"
+                id="profileAgeInput"
+                placeholder="Age">
+
+            <button id="saveProfileBtn">
+                💾 Save Changes
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- =========================
+USER PROFILE POPUP
+========================= -->
+
+<div id="profileModal" class="profile-modal">
+
+    <div class="profile-card">
+
+        <button
+            id="closeProfile"
+            class="close-profile">
+            ✖
+        </button>
+
+        <img
+            id="profileImage"
+            src="/uploads/default.jpg"
+            class="profile-big-avatar"
+            alt="Profile">
+
+        <h2 id="profileName">
+            Username
+        </h2>
+
+        <div id="profileRole"
+             class="profile-role">
+            User
+        </div>
+
+        <p>
+            <strong>🌍 Country:</strong>
+            <span id="profileCountry">
+                Unknown
+            </span>
+        </p>
+
+        <p>
+            <strong>🎂 Age:</strong>
+            <span id="profileAge">
+                --
+            </span>
+        </p>
+
+        <p>
+            <strong>📝 Bio:</strong>
+        </p>
+
+        <p id="profileBio">
+            No bio yet.
+        </p>
+
+        <div id="profileStatus" class="profile-status">
+    🟢 Online
+</div>
+
+<button
+    id="startDM"
+    style="margin-top:18px;
+           padding:10px 20px;
+           border:none;
+           border-radius:10px;
+           cursor:pointer;">
+
+    💬 Message
+
+</button>
+    </div>
+ <div id="dmModal" class="dm-window">
+
+    <div class="dm-header">
+
+        <div class="dm-user">
+
+            <img id="dmAvatar"
+                 src="/uploads/default.jpg"
+                 class="dm-avatar">
+
+            <div>
+                <h3 id="dmTitle">User</h3>
+                <small id="dmStatus">Online</small>
+            </div>
+
+        </div>
+
+        <div class="dm-actions">
+
+            <button id="voiceCallBtn">📞</button>
+            <button id="videoCallBtn">🎥</button>
+            <button id="dmSettingsBtn">⚙️</button>
+            <button id="closeDM">✖</button>
+
+        </div>
+
+    </div>
+
+    <div id="dmMessages" class="dm-messages"></div>
+
+    <div class="dm-footer">
+
+        <button id="emojiBtn">😊</button>
+
+        <button id="attachBtn">📎</button>
+
+        <input
+            type="text"
+            id="dmInput"
+            placeholder="Type a message..."
+        >
+
+        <button id="voiceBtn">🎤</button>
+
+<button id="sendDM" class="send-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+        <path d="M2 21L23 12L2 3L2 10L17 12L2 14L2 21Z"/>
+    </svg>
+</button>
+
+    </div>
+
+</div>
+
+</div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="chat.js"></script>
+
+</body>
+</html>

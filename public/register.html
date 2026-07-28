@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Register · TeenVerse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <div class="background-orb orb-one"></div>
+  <div class="background-orb orb-two"></div>
+
+  <main class="auth-card">
+    <a class="back-link" href="index.html">← Back</a>
+    <div class="logo-mark small-logo">🌊</div>
+    <h1>Create Account</h1>
+    <p class="auth-copy">Join the TeenVerse community.</p>
+
+    <form id="registerForm" class="auth-form">
+      <label>Username
+        <input id="username" required minlength="3" maxlength="24" placeholder="Choose a username">
+      </label>
+      <label>Password
+        <input id="password" type="password" required minlength="6" placeholder="Minimum 6 characters">
+      </label>
+      <div class="form-grid">
+        <label>Age
+          <input id="age" type="number" min="13" max="20" required placeholder="13–20">
+        </label>
+        <label>Country
+          <input id="country" required maxlength="40" placeholder="Your country">
+        </label>
+      </div>
+      <button class="primary-button" type="submit">Create Account</button>
+      <p id="status" class="status"></p>
+    </form>
+
+    <p class="switch-copy">Already registered? <a href="login.html">Login</a></p>
+  </main>
+  <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "5caa44bd-c844-4808-98b0-ad4703a3b437",
+    "username": "ahya",
+    "usernameLower": "ahya",
+    "passwordHash": "$2a$12$X.OTWOMqlDruX/5A2hLgWeB21DVmfQ3JlAl7GW6Tsw98IQXFnNFr2",
+    "age": 20,
+    "country": "india",
+    "role": "OWNER",
+    "banned": false,
+    "muted": false,
+    "createdAt": "2026-07-26T06:36:27.130Z",
+    "avatar": "/uploads/1785163173445.jpg"
+  },
+  {
+    "id": "ce823e56-5679-4740-ad1d-3d0c11991bf4",
+    "username": "amoya",
+    "usernameLower": "amoya",
+    "passwordHash": "$2a$12$vFlUIuf2ybAwCqt1ccFpa.f/SnfmJXlrO5WFsasrapeNEPbiMuVZ6",
+    "age": 20,
+    "country": "india",
+    "role": "USER",
+    "avatar": "",
+    "banned": false,
+    "muted": false,
+    "createdAt": "2026-07-28T03:44:52.914Z"
+  },
+  {
+    "id": "f24c515c-e987-4579-aba7-338f69c6abe5",
+    "username": "amorah",
+    "usernameLower": "amorah",
+    "passwordHash": "$2a$12$eEabXtZwnLaMnWjBAXDNKuHhAqVljBlRVJdbUYofO7hMerQ3Ycz.O",
+    "age": 20,
+    "country": "india",
+    "role": "USER",
+    "avatar": "/uploads/1785210824977.jpg",
+    "banned": false,
+    "muted": false,
+    "createdAt": "2026-07-28T03:45:34.729Z"
+  }
+]
