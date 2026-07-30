@@ -1376,6 +1376,51 @@ width:0;
     min-width:0;
 }
 
+/* Mobile layout improvements */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 100%;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.chat-main {
+    flex: 1;
+    width: 100%;
+}
+
+.owner-panel {
+    width: 100%;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.message-input {
+    width: 100%;
+}
+
+.message-input input {
+    flex: 1;
+}
+
+.send-btn {
+    min-width: 80px;
+}
+/* Hide owner dashboard on phones */
+.owner-panel {
+    display: none;
+}
+
+/* Let the chat use the full width */
+.chat-main {
+    width: 100%;
+    flex: 1;
+}
 /* ==========================
    MOBILE HEADER FIX
 ========================== */

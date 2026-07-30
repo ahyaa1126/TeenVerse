@@ -1,83 +1,20 @@
 [
   {
-    "id": "dea3e384-3f33-4532-97a4-d6c559735b5f",
+    "id": "68598e3d-f929-493a-b04d-8e8dcdc0b8eb",
     "room": "General",
     "username": "ahya",
     "role": "OWNER",
     "avatar": "/uploads/1785163173445.jpg",
-    "message": "haiii",
-    "createdAt": "2026-07-27T14:43:58.428Z"
+    "message": "..",
+    "createdAt": "2026-07-28T16:23:21.177Z"
   },
   {
-    "id": "fb0a75ef-5108-4886-9b5d-a443926053c8",
-    "room": "General",
-    "username": "amorah",
-    "role": "USER",
-    "avatar": "/uploads/default.jpg",
-    "message": "hooo",
-    "createdAt": "2026-07-28T03:45:56.644Z"
-  },
-  {
-    "id": "9f87f5b6-533d-4a92-940b-86858f69b3e4",
+    "id": "bdde31b1-22a6-4114-9f5f-5e0c2048bb18",
     "room": "General",
     "username": "ahya",
     "role": "OWNER",
     "avatar": "/uploads/1785163173445.jpg",
-    "message": "amoo please yedhum change panatha",
-    "createdAt": "2026-07-28T03:47:50.993Z"
-  },
-  {
-    "id": "18eaf006-245d-462f-93b6-af3134ae3698",
-    "room": "General",
-    "username": "amorah",
-    "role": "USER",
-    "avatar": "/uploads/default.jpg",
-    "message": "pannuna yena ipoo",
-    "createdAt": "2026-07-28T03:48:07.201Z"
-  },
-  {
-    "id": "c77fd2a6-7bd4-4be7-b8ca-726b323d5266",
-    "room": "General",
-    "username": "ahya",
-    "role": "OWNER",
-    "avatar": "/uploads/1785163173445.jpg",
-    "message": "adiye tension aavuthu",
-    "createdAt": "2026-07-28T03:48:29.730Z"
-  },
-  {
-    "id": "8c75067a-bbb2-422e-9580-d72a635847a8",
-    "room": "General",
-    "username": "amorah",
-    "role": "USER",
-    "avatar": "/uploads/default.jpg",
-    "message": "are you ready ammulu?😋",
-    "createdAt": "2026-07-28T03:49:49.817Z"
-  },
-  {
-    "id": "d6fbcc1e-0e81-4106-9b14-8764d2e1d2ff",
-    "room": "General",
-    "username": "ahya",
-    "role": "OWNER",
-    "avatar": "/uploads/1785163173445.jpg",
-    "message": "amo promise ahh tension aagiduve paathuko",
-    "createdAt": "2026-07-28T03:50:35.524Z"
-  },
-  {
-    "id": "ed8b2287-07df-4b3f-b6b0-b6a6b0ea1bb9",
-    "room": "General",
-    "username": "amorah",
-    "role": "USER",
-    "avatar": "/uploads/1785210824977.jpg",
-    "message": "profile nalla irukaa!",
-    "createdAt": "2026-07-28T03:54:18.402Z"
-  },
-  {
-    "id": "8d54437f-97bc-4ad8-90f6-79936270f71d",
-    "room": "General",
-    "username": "ahya",
-    "role": "OWNER",
-    "avatar": "/uploads/1785163173445.jpg",
-    "message": "theriyadhu",
-    "createdAt": "2026-07-28T03:54:31.451Z"
+    "message": ".",
+    "createdAt": "2026-07-28T16:23:25.143Z"
   }
 ]

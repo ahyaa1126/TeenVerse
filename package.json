@@ -1,35 +1,13 @@
 {
-<<<<<<< HEAD
   "name": "teenverse-tonight",
   "version": "1.0.0",
   "private": true,
   "description": "TeenVerse local JSON real-time chat",
-=======
-  "name": "teenverse-online-mvp",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Deployable TeenVerse chat MVP",
->>>>>>> f8811919ee99d76bba9be9cf1daab3e376693680
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
     "dev": "nodemon server/server.js"
   },
-<<<<<<< HEAD
-  "engines": {
-    "node": ">=20"
-  },
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "dotenv": "^17.4.2",
-    "express": "^4.21.1",
-    "jsonwebtoken": "^9.0.2",
-    "multer": "^2.2.0",
-    "socket.io": "^4.8.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.7"
-=======
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.7",
@@ -41,6 +19,5 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
->>>>>>> f8811919ee99d76bba9be9cf1daab3e376693680
   }
 }
