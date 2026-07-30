@@ -1343,12 +1343,13 @@ width:0;
     }
 
     .owner-panel {
-        position: fixed;
-        inset: 0;
-        width: 100%;
-        z-index: 999;
-    }
-
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    z-index: 999;
+    display: none;
+    overflow-y: auto;
+}
     .dm-window {
         position: fixed;
         inset: 0;
@@ -1410,10 +1411,6 @@ width:0;
 
 .send-btn {
     min-width: 80px;
-}
-/* Hide owner dashboard on phones */
-.owner-panel {
-    display: none;
 }
 
 /* Let the chat use the full width */
